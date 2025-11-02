@@ -60,25 +60,34 @@ _A brief description of the customer, stakeholders, and users of your software._
 This section will include the user stories you identified for your project. Make sure to write your user stories in the form : 
 "As a **[Role]**, I want **[Feature]** so that **[Reason/Benefit]** "
 
-1. As a **student**, I would like to **input relevant information about myself**, so that I can be matched to appropriate professors
-2. As a **student**, I would like to **be able to apply for lab positions**, so that I can participate
-3. As a **student**, I want to **be able to cancel my applications** in case **I change my mind**.
+1. As a **student**, I would like to **input relevant information about myself**, so that I can be matched to appropriate professors (Manage Profile)
+2. As a **student**, I would like to **be able to apply for lab positions**, so that I can participate (View Positions)
+3. As a **student**, I want to **be able to cancel my applications** in case **I change my mind**. (Delete Request)
   
-4. As a **general user**, I would like to **create a profile**, so that I can log in/out   
-5. As a **general user**, I would like to **log in and log out using my school credentials or single-sign-on**
-6. As a **general user**, I want to **be able to edit my profile**, in case I want to make changes
-7. As a **general user**, I would like to **be able to view the available list of positions**
+4. As a **general user**, I would like to **create a profile**, so that I can log in/out (Authentication)
+5. As a **general user**, I would like to **log in and log out using my school credentials or single-sign-on** (Authentication)
+6. As a **general user**, I want to **be able to edit my profile**, in case I want to make changes (Manage Profile)
+7. As a **general user**, I would like to **be able to view the available list of positions** . (View Positions)
+8. As a **student**, I would like to **be able to filter the available list of positions**. (View Positions)
+9. As a **professor**, I would like to **be able to filter the list of applicants**. (View Requests)
 
-8. As a **professor**, I want to **be able to create positions**, so that students can apply to them
-9. As a **professor**, I want to **be able accept and reject students from positions I offered**
-10. As a **professor**, I want to **be able to view student profiles**, so that I can see their qualifications
-11. As a **professor**, I want to **be able to view pending requests from my profile page**, so I can see who wants the positions I am offering
-12. As a **professor**, I want to **be able to edit positions**, so that I can make changes to them
-13. As a **professor**, I want to **be able to delete positions**, in case they are already full
-14. As a **professor**, I want to **be able to remove students from a position**, in case plans change
+10. As a **professor**, I want to **be able to create positions**, so that students can apply to them (Manage Positions)
+11. As a **professor**, I want to **be able accept and reject students from positions I offered** (View Requests)
+12. As a **professor**, I want to **be able to view student profiles**, so that I can see their qualifications (View Requests)
+13. As a **professor**, I want to **be able to view pending requests from my profile page**, so I can see who wants the positions I am offering (View Requests)
+14. As a **professor**, I want to **be able to edit positions**, so that I can make changes to them (Manage Positions)
+15. As a **professor**, I want to **be able to delete positions**, in case they are already full (Manage Positions) 
+16. As a **professor**, I want to **be able to remove students from a position**, in case plans change (Delete Request)
 
 ----
 ## 2.3 Use Cases
+
+-- Manage Profile (Cristian)
+-- View Positions (Fulin)
+-- Delete Request (Nathanael)
+-- Authentication (Cristian)
+-- View Requests (Fulin)
+-- Manage Positions (Aiden)
 
 This section will include the specification for your project in the form of use cases. 
 
