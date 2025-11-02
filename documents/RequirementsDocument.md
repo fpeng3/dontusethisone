@@ -49,17 +49,25 @@ Provide a short description of the software being specified. Describe its purpos
 This section specifies the software product's requirements. Specify all of the software requirements to a level of detail sufficient to enable designers to design a software system to satisfy those requirements, and to enable testers to test that the software system satisfies those requirements.
 
 ## 2.1 Customer, Users, and Stakeholders
+_A brief description of the customer, stakeholders, and users of your software._
 
-A brief description of the customer, stakeholders, and users of your software.
+- Students who want to find research opportunities
+- Professors (Faculty) who want to find students to help with their research
 
 ----
 ## 2.2 User Stories
 This section will include the user stories you identified for your project. Make sure to write your user stories in the form : 
 "As a **[Role]**, I want **[Feature]** so that **[Reason/Benefit]** "
 
-1. User story 1
-2. User story 2
-3. User story 3
+1. As a **student**, I would like to **create a profile**, so that I can log in/out
+2. As a **student**, I would like to **input relevant information about myself**, so that I can be matched to appropriate professors
+3. As a **student**, I would like to **be able to apply for lab positions**, so that I can participate
+4. As a **student**, I want to **be able to cancel my applications** in case **I change my mind**.
+5. As a **student**, I want to **be able to edit my profile**, in case I want to make changes
+6. As a **student**, I would like to **be able to view the available list of positions**
+7. As a **student**, I would like to **log in and log out using my school credentials or single-sign-on**
+
+8. 
 
 ----
 ## 2.3 Use Cases
