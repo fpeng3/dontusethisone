@@ -118,6 +118,19 @@ You may use the following table template for your use cases. Copy-paste this tab
 | Alternative flow of events    | "enter your reponse here"  |
 | Iteration #         | "enter your reponse here"  |
 
+
+
+| Use case # 2     |   |
+| ------------------ |--|
+| Name              | Delete Request   |
+| Participating actor  |  Professors and Students  |
+| Entry condition(s)     | User selects an option to delete a post  |
+| Exit condition(s)           | Post is successfully deleted  |
+| Flow of events | 1.  User selects their "delete post." <br> 2.  System displays existing posts that the user has made with options to delete. <br> 3. User selects post that they want to delete. <br>     |
+| Alternative flow of events    | - If the user is a teacher, the posts displayed will be research positions <br> - If the user is a student, the posts will be applications to research positions <br> - At step 2, the user has the option to click a post to get more detailed information before they delete <br> - At any point, the user can select an option that will bring them back to the home page   |
+| Iteration #         | 1  |
+
+
 ----
 # 3. User Interface
 
