@@ -81,6 +81,10 @@ This section will include the user stories you identified for your project. Make
 14. As a **professor**, I want to **be able to edit positions**, so that I can make changes to them (Manage Positions)
 15. As a **professor**, I want to **be able to delete positions**, in case they are already full (Manage Positions) 
 16. As a **professor**, I want to **be able to remove students from a position**, in case plans change (Delete Request)
+17. As a **general user**, I want to **be able to see and edit sensitive information like username and password** (Edit sensitive info)
+18. As a **student**, I want to **be notified whenever a professor accepts or rejects my application**. (Notification)
+19. As a **professor** , I want to **be notified whenever a student applies to one of my research positions**. (Notification)
+20. As a **general user**, i want to **be to be able to delete my account**. (Delete account)
 
 ----
 ## 2.3 Use Cases
@@ -91,6 +95,9 @@ This section will include the user stories you identified for your project. Make
 -- Authentication (Cristian)
 -- View Requests (Fulin)
 -- Manage Positions (Aiden)
+-- Edit sensitive information (Aiden)
+-- Notification (Nathanael)
+-- Delete account (Nathanael)
 
 This section will include the specification for your project in the form of use cases. 
 
@@ -109,9 +116,9 @@ Group the related user stories and provide a use case for each user story group.
 
 Each use case should also have a field called "Iteration" where you specify in which iteration you plan to implement this feature.
 
-You may use the following table template for your use cases. Copy-paste this table for each use case you will include in your document. 
+You may use the following table template for your use cases. Copy-paste this table for each use case you will include in your document.
 
-| Use case # 1      |   |
+| Use case template      |   |
 | ------------------ |--|
 | Name              | "enter your reponse here"  |
 | Participating actor  | "enter your reponse here"  |
@@ -121,18 +128,45 @@ You may use the following table template for your use cases. Copy-paste this tab
 | Alternative flow of events    | "enter your reponse here"  |
 | Iteration #         | "enter your reponse here"  |
 
-
-
-| Use case # 2     |   |
+| Use case # 1      |   |
 | ------------------ |--|
-| Name              | Delete Application (Student) or Delete Research Position (Faculty)   |
-| Participating actor  |  Professors and Students  |
-| Entry condition(s)     | Post to be deleted exists  |
-| Exit condition(s)           | Post is successfully deleted  |
-| Flow of events | 1.  User selects their "delete post." <br> 2.  System asks user for confirmation to delete post. <br> 3. User confirms deletion. <br> - System deletes post.     |
-| Alternative flow of events    | - If the user is a teacher, posts to be deleted will be research positions <br> - If the user is a student, the posts to be deleted will be applications to research positions <br> - At step 2, the user has the option to click a post to get more detailed information before they delete <br> - At step 3, the user choose "cancel" option to stop use case   |
+| Name              | Authentication  |
+| Participating actor  | General User  |
+| Entry condition(s)     | A user decides to log in or create an account.  |
+| Exit condition(s)           | A user logs out  |
+| Flow of events | - If a user already has an account, they will use their school credentials (email + password) and log in, or use single-sign on. They will then load into the main page. At this point, they can continue performing activities while logged in, or click the "log out" button and log out of their account, taking them back to the auth page.  |
+| Alternative flow of events    | - If a user has no account, they will hit the "create an account" option. They will type in their personal information and create theirr account. On success, they will be redirected to the main page and log in regularly.   |
 | Iteration #         | 1  |
 
+| Use case # 2      |   |
+| ------------------ |--|
+| Name              | View Positiions  |
+| Participating actor  | General User  |
+| Entry condition(s)     | A position has been posted  |
+| Exit condition(s)           | The user closes the position's page |
+| Flow of events | 1. The user clicks on the "details" button below the position they want to view <br> 2. The user is brought to the page listing the position's details. <br> 3. The user clicks the "go back" button. |
+| Alternative flow of events    | - If the user is a student, they will have the option to see an "apply" button <br> - If the user is the professor that created the position, they will be able to see an "Edit" button <br> - Before step 1, the user may filter the positions by tags to see only the relevant ones |
+| Iteration #         | 1  |
+
+| Use case # 3      |   |
+| ------------------ |--|
+| Name              | Manage Profile  |
+| Participating actor  | General User  |
+| Entry condition(s)     | - A user clicks the "manage profile" option in their profile |
+| Exit condition(s)           | - User saves their changes in the "manage profile" option or exits the page forcefully.  |
+| Flow of events | - A user clicks the "manage profile" option in their profile <br> - They modify user information and input relevant information about themselves <br> -  They review and save their changes and are redirected to the view profile page. |
+| Alternative flow of events    | If at any point of the process, the user clicks the "back button", or closes the page, no changes will be made.  |
+| Iteration #         | 1  |
+
+| Use case # 5      |   |
+| ------------------ |--|
+| Name              | View Requests  |
+| Participating actor  | Professor  |
+| Entry condition(s)     | The user is logged in and a student has applied to one of the positions the user created  |
+| Exit condition(s)           | The user accepts or rejects a student's request  |
+| Flow of events | 1. The user clicks on the "view requests" button on their main profile <br> 2. The system brings the user to a page listing all application requests. <br> 3. The user clicks on the "view details" button for a specific request <br> 4. The system shows the user the student's full application and profile <br> 5. The user clicks either the "accept" or "reject" button.  |
+| Alternative flow of events    | - Before step 1, the user may filter requests by student tags <br> |
+| Iteration #         | 1  |
 
 ----
 # 3. User Interface
