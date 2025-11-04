@@ -41,12 +41,15 @@ Prepared by:
 ----
 # 1. Introduction
 
-Provide a short description of the software being specified. Describe its purpose, including relevant benefits, objectives, and goals.
+Provide a short description of the software being specified. Describe its purpose, including relevant benefits, objectives, and goals. <br>
+
+This application has the purpose of matching students with research positions. The objective is that professors who need help with research can post a position, a student can apply, and the professor can accept or deny them. The goal is that professors can see the qualifications of each student to find the best fit for their position. The benefits of this application would be that it would act as one unified hub the connects students and professors with similar specialties. 
 
 ----
 # 2. Requirements Specification
 
-This section specifies the software product's requirements. Specify all of the software requirements to a level of detail sufficient to enable designers to design a software system to satisfy those requirements, and to enable testers to test that the software system satisfies those requirements.
+This section specifies the software product's requirements. Specify all of the software requirements to a level of detail sufficient to enable designers to design a software system to satisfy those requirements, and to enable testers to test that the software system satisfies those requirements. <br>
+Teachers and Students will both be able to log into this application in order to post research positions and apply to said positions respectively. The following subsections provide further requirement details. 
 
 ## 2.1 Customer, Users, and Stakeholders
 _A brief description of the customer, stakeholders, and users of your software._
@@ -106,7 +109,7 @@ Group the related user stories and provide a use case for each user story group.
 
 Each use case should also have a field called "Iteration" where you specify in which iteration you plan to implement this feature.
 
-You may use the following table template for your use cases. Copy-paste this table for each use case you will include in your document.
+You may use the following table template for your use cases. Copy-paste this table for each use case you will include in your document. 
 
 | Use case # 1      |   |
 | ------------------ |--|
@@ -117,6 +120,19 @@ You may use the following table template for your use cases. Copy-paste this tab
 | Flow of events | "enter your reponse here"  |
 | Alternative flow of events    | "enter your reponse here"  |
 | Iteration #         | "enter your reponse here"  |
+
+
+
+| Use case # 2     |   |
+| ------------------ |--|
+| Name              | Delete Application (Student) or Delete Research Position (Faculty)   |
+| Participating actor  |  Professors and Students  |
+| Entry condition(s)     | Post to be deleted exists  |
+| Exit condition(s)           | Post is successfully deleted  |
+| Flow of events | 1.  User selects their "delete post." <br> 2.  System asks user for confirmation to delete post. <br> 3. User confirms deletion. <br> - System deletes post.     |
+| Alternative flow of events    | - If the user is a teacher, posts to be deleted will be research positions <br> - If the user is a student, the posts to be deleted will be applications to research positions <br> - At step 2, the user has the option to click a post to get more detailed information before they delete <br> - At step 3, the user choose "cancel" option to stop use case   |
+| Iteration #         | 1  |
+
 
 ----
 # 3. User Interface
